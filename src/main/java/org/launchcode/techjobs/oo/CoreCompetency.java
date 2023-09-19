@@ -8,6 +8,8 @@ public class CoreCompetency {
     private static int nextId = 1;
     private String value;
 
+
+
     public CoreCompetency() {
         this.id = nextId;
         nextId++;
@@ -16,6 +18,22 @@ public class CoreCompetency {
     public CoreCompetency(String value) {
         this();
         this.value = value;
+    }
+
+
+    public String getValue() {
+        return value;
+    }
+
+    public int getId() {
+        return id;
+    }
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     // Custom toString, equals, and hashCode methods:
