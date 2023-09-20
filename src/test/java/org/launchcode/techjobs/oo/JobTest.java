@@ -78,7 +78,7 @@ public class JobTest {
     }
     @Test
     public void testToStringHandlesEmptyField(){
-        Job job2 = new Job(" ", new Employer("Launchcode"), new Location("Saint Louis"), new PositionType("Web - Full Stack"), new CoreCompetency("Javascript"));
+        Job job2 = new Job("", new Employer("Launchcode"), new Location("Saint Louis"), new PositionType("Web - Full Stack"), new CoreCompetency("Javascript"));
         String actualresult1="\n" +
                 "ID: 3\n" +
                 "Name: Data not available\n" +
@@ -90,7 +90,7 @@ public class JobTest {
         String expectedResult1=job2.toString();
         Assert.assertEquals(actualresult1,expectedResult1);
 
-        Job job3 = new Job("Full Stack Developer", new Employer(" "), new Location("Saint Louis"), new PositionType("Web - Full Stack"), new CoreCompetency("Javascript"));
+        Job job3 = new Job("Full Stack Developer", new Employer(""), new Location("Saint Louis"), new PositionType("Web - Full Stack"), new CoreCompetency("Javascript"));
         String actualresult2="\n" +
                 "ID: 4\n" +
                 "Name: Full Stack Developer\n" +

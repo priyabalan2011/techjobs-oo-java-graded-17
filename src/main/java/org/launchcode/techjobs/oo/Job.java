@@ -50,12 +50,12 @@ public class Job {
     public String toString() {
         String newLine = System.lineSeparator();
 
-        this.name=(Objects.equals(name, " "))?"Data not available":name;
-        String emp=(employer.getValue() == " ")?"Data not available":employer.getValue();
+        this.name=(Objects.equals(name, ""))?"Data not available":name;
+        String emp=(employer.getValue() == "")?"Data not available":employer.getValue();
         employer.setValue(emp);
-        String loc=(location.getValue() == " ")?"Data not available":location.getValue();
+        String loc=(location.getValue() == "")?"Data not available":location.getValue();
         location.setValue(loc);
-        String pos=(positionType.getValue() == " ")?"Data not available":positionType.getValue();
+        String pos=(positionType.getValue() == "")?"Data not available":positionType.getValue();
         positionType.setValue(pos);
 
         return newLine + "ID: " + id +
